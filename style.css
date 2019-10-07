@@ -1,0 +1,137 @@
+body{
+    height: 100vh;
+    font-size:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 3rem;
+    color:rgb(143, 235, 235);
+}
+
+p{
+    font-size:1.5rem;
+    margin-top:3vh;
+}
+
+img{
+    margin-left: 1.5rem;
+}
+
+.wrapper-main{
+    border: 0.3rem solid gray;
+    padding: 2rem;
+    background-color:transparent;
+    width: 37.5vw;
+}
+
+.wrapper-main ul{
+    padding-top:1rem;
+}
+
+.wrapper-main li{
+    margin-left: 1.5em;
+}
+
+.wrapper-main a:before{
+    content: "";
+    border-color: transparent orange;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+
+.wrapper-main a{
+    color:rgba(0, 183, 255, 0.795);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.wrapper-main a:hover{
+    text-decoration: underline;
+}
+
+
+.wrapper-main button{
+    /* margin-top: 5vh; */
+    height: 5rem;
+    width:100%;
+    border: none;
+    background-color:orange;
+    color:white;
+    font-size: 2rem;
+    border-radius: 5px
+}
+button:hover{
+    background-color: darkorange;
+}
+
+.wrapper-carrusel{
+    margin: 4vh 0;
+    display: flex;
+    align-content: baseline;
+    height: 6vh;
+    overflow:hidden;
+}
+
+.wrapper-carrusel label{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.wrapper-img{
+    /* animation: race linear 4s infinite;
+    margin-left: 10px; */
+    display: flex;
+}
+
+
+
+.wrapper-carrusel button{
+    display: none;
+    background-color: blue;
+    width:30%;
+    height: 6vh;
+    font-size: 1rem;
+    position: absolute;
+    transform: translateX(200px)
+}
+
+.wrapper-carrusel:hover .wrapper-img{
+    opacity: 0.6;
+}
+
+.wrapper-carrusel:hover button{
+    display: inline;
+}
+
+
+
+/* @keyframes race{
+    from {left: 125px;}
+    to {left: 700px;}
+} */
+
+/* .wrapper-img2{
+    z-index: 41;
+    position:absolute;
+    animation: race2 linear 3s infinite;
+} */
+
+
+/* @keyframes race2{
+    from {left: 0px;}
+    to {left: 475px;}
+} */
